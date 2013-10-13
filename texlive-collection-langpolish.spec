@@ -1,4 +1,4 @@
-# revision 23552
+# revision 30372
 # category Collection
 # catalog-ctan undef
 # catalog-date undef
@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langpolish
 Epoch:		1
-Version:	20120224
+Version:	20131013
 Release:	1
 Summary:	Polish
 Group:		Publishing
@@ -16,9 +16,14 @@ Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-langpo
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
+Requires:	texlive-collection-latex
+Requires:	texlive-collection-basic
+Requires:	texlive-babel-polish
 Requires:	texlive-cc-pl
 Requires:	texlive-gustlib
 Requires:	texlive-gustprog
+Requires:	texlive-hyphen-polish
+Requires:	texlive-lshort-polish
 Requires:	texlive-mex
 Requires:	texlive-mwcls
 Requires:	texlive-pl
@@ -26,13 +31,12 @@ Requires:	texlive-polski
 Requires:	texlive-przechlewski-book
 Requires:	texlive-qpxqtx
 Requires:	texlive-tap
+Requires:	texlive-tex-virtual-academy-pl
+Requires:	texlive-texlive-pl
 Requires:	texlive-utf8mex
-Requires:	texlive-hyphen-polish
-Requires:	texlive-collection-latex
-Requires:	texlive-collection-basic
 
 %description
-Support for typesetting Polish.
+Support for Polish.
 
 #-----------------------------------------------------------------------
 %files
@@ -44,12 +48,3 @@ Support for typesetting Polish.
 %build
 
 %install
-
-
-%changelog
-* Fri Feb 24 2012 Paulo Andrade <pcpa@mandriva.com.br> 1:20120224-1
-+ Revision: 780452
-- Update to latest release.
-- Import texlive-collection-langpolish
-- Import texlive-collection-langpolish
-
