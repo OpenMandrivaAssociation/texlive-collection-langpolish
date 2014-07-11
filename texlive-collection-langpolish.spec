@@ -7,7 +7,7 @@
 Name:		texlive-collection-langpolish
 Epoch:		1
 Version:	20131013
-Release:	6
+Release:	7
 Summary:	Polish
 Group:		Publishing
 URL:		http://tug.org/texlive
