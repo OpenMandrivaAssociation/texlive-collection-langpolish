@@ -6,8 +6,8 @@
 # catalog-version undef
 Name:		texlive-collection-langpolish
 Epoch:		1
-Version:	20131013
-Release:	9
+Version:	20170516
+Release:	1
 Summary:	Polish
 Group:		Publishing
 URL:		http://tug.org/texlive
