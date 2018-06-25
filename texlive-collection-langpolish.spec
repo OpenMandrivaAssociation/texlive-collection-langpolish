@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-collection-langpolish
 Epoch:		1
-Version:	20170516
+Version:	20180303
 Release:	1
 Summary:	Polish
 Group:		Publishing
