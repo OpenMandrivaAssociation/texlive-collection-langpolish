@@ -1,44 +1,39 @@
-Name:		texlive-collection-langpolish
-Epoch:		1
-Version:	54074
-Release:	2
+%global tl_name collection-langpolish
+%global tl_revision 54074
+
+Name:		texlive-%{tl_name}
+Version:	%{tl_revision}
+Release:	1
 Summary:	Polish
 Group:		Publishing
-URL:		https://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-langpolish.r%{version}.tar.xz
+URL:		https://www.ctan.org/pkg/collection-langpolish
+License:	LPPL
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/collection-langpolish.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires:	texlive-collection-latex
-Requires:	texlive-collection-basic
-Requires:	texlive-babel-polish
-Requires:	texlive-cc-pl
-Requires:	texlive-gustlib
-Requires:	texlive-gustprog
-Requires:	texlive-hyphen-polish
-Requires:	texlive-lshort-polish
-Requires:	texlive-mex
-Requires:	texlive-mwcls
-Requires:	texlive-pl
-Requires:	texlive-polski
-Requires:	texlive-przechlewski-book
-Requires:	texlive-qpxqtx
-Requires:	texlive-tap
-Requires:	texlive-tex-virtual-academy-pl
-Requires:	texlive-texlive-pl
-Requires:	texlive-utf8mex
+%texlive_base_requires
+Requires:	texlive(babel-polish)
+Requires:	texlive(bredzenie)
+Requires:	texlive(cc-pl)
+Requires:	texlive(collection-basic)
+Requires:	texlive(collection-latex)
+Requires:	texlive(gustlib)
+Requires:	texlive(gustprog)
+Requires:	texlive(hyphen-polish)
+Requires:	texlive(lshort-polish)
+Requires:	texlive(mex)
+Requires:	texlive(mwcls)
+Requires:	texlive(pl)
+Requires:	texlive(polski)
+Requires:	texlive(przechlewski-book)
+Requires:	texlive(qpxqtx)
+Requires:	texlive(tap)
+Requires:	texlive(tex-virtual-academy-pl)
+Requires:	texlive(texlive-pl)
+Requires:	texlive(utf8mex)
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
 Support for Polish.
 
-#-----------------------------------------------------------------------
-%files
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c
-
-%build
-
-%install
